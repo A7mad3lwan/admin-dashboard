@@ -9,10 +9,14 @@ class AdminDashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AdaptiveLayout(
-      mobileLayout: (context) => const MobileLayout(),
-      tabletLayout: (context) => const TabletLayout(),
-      desktopLayout: (context) => const DesktopLayout(),
+    return SafeArea(
+      child: Scaffold(
+        body: AdaptiveLayout(
+          mobileLayout: (context) => const MobileLayout(),
+          tabletLayout: (context) => const TabletLayout(),
+          desktopLayout: (context) => const DesktopLayout(),
+        ),
+      ),
     );
   }
 }
