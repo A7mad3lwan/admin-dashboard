@@ -2,6 +2,8 @@ import 'package:dashboard/core/utils/app_images.dart';
 import 'package:dashboard/views/widgets/user_info_list_tile.dart';
 import 'package:flutter/material.dart';
 
+import 'custom_drawer_list.dart';
+
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
 
@@ -17,6 +19,7 @@ class CustomDrawer extends StatelessWidget {
             image: Assets.avatar3,
           ),
           SizedBox(height: 8),
+          CustomDrawerListView(),
         ],
       ),
     );
