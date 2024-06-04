@@ -14,8 +14,7 @@ class _CustomDrawerListViewState extends State<CustomDrawerListView> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
+    return SliverList.builder(
       itemCount: items.length,
       itemBuilder: (context, index) => GestureDetector(
         onTap: () {
