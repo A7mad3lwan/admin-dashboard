@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AdminDashboard extends StatelessWidget {
-  const AdminDashboard({super.key});
+class DesktopLayout extends StatelessWidget {
+  const DesktopLayout({super.key});
 
   @override
   Widget build(BuildContext context) {
