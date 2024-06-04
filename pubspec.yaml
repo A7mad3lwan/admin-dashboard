@@ -39,6 +39,7 @@ dependencies:
   expandable_page_view: ^1.0.17
   fl_chart: ^0.68.0
   flutter_svg: ^2.0.10+1
+  font_awesome_flutter: ^10.7.0
 
 dev_dependencies:
   flutter_test:
