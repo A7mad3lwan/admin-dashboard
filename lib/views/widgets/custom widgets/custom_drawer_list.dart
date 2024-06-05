@@ -1,6 +1,6 @@
 import 'package:dashboard/data/data%20source/statics/drawer_items_list.dart';
-import 'package:dashboard/views/widgets/drawer_item.dart';
 import 'package:flutter/material.dart';
+import 'drawer_item.dart';
 
 class CustomDrawerListView extends StatefulWidget {
   const CustomDrawerListView({super.key});

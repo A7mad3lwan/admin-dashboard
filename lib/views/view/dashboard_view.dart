@@ -1,4 +1,4 @@
-import 'package:dashboard/views/widgets/layouts/adaptive_layout_widget.dart';
+import 'package:dashboard/views/widgets/layouts/adaptive_layout_builder.dart';
 import 'package:dashboard/views/widgets/layouts/desktop_layout.dart';
 import 'package:dashboard/views/widgets/layouts/mobile_layout.dart';
 import 'package:dashboard/views/widgets/layouts/tablet_layout.dart';

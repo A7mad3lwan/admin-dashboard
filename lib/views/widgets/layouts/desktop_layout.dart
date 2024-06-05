@@ -1,8 +1,10 @@
-import 'package:dashboard/views/widgets/all_expenses.dart';
-import 'package:dashboard/views/widgets/custom_drawer.dart';
+import 'package:dashboard/views/widgets/custom%20widgets/quick_invoice.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+
+import '../custom widgets/all_expenses.dart';
+import '../custom widgets/custom_drawer.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
@@ -17,7 +19,23 @@ class DesktopLayout extends StatelessWidget {
         SizedBox(width: 32),
         Expanded(
           flex: 2,
-          child: AllExpenses(),
+          child: Padding(
+            padding: EdgeInsets.only(top: 16),
+            child: CustomScrollView(
+              slivers: [
+                SliverFillRemaining(
+                  hasScrollBody: false,
+                  child: Column(
+                    children: [
+                      AllExpenses(),
+                      SizedBox(height: 20),
+                      QuickInvoice(),
+                    ],
+                  ),
+                )
+              ],
+            ),
+          ),
         ),
       ],
     );

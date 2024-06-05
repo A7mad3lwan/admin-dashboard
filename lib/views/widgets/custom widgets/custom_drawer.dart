@@ -1,5 +1,5 @@
 import 'package:dashboard/core/utils/app_images.dart';
-import 'package:dashboard/views/widgets/user_info_list_tile.dart';
+import 'package:dashboard/views/widgets/custom%20widgets/user_info_list_tile.dart';
 import 'package:flutter/material.dart';
 import 'custom_drawer_list.dart';
 import 'drawer_bottom_column.dart';

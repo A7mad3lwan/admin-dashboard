@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../../core/utils/app_images.dart';
-import '../../data/model/drawer_item_model.dart';
+import '../../../core/utils/app_images.dart';
+import '../../../data/model/drawer_item_model.dart';
 import 'active_inactive_drawer_item.dart';
 
 class DrawerBottomColumn extends StatelessWidget {
