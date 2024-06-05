@@ -1,4 +1,5 @@
 import 'package:dashboard/views/widgets/custom%20widgets/custom_dashboard_container.dart';
+import 'package:dashboard/views/widgets/custom%20widgets/quick_invoice_header.dart';
 import 'package:flutter/material.dart';
 
 class QuickInvoice extends StatelessWidget {
@@ -7,7 +8,11 @@ class QuickInvoice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CustomDashboardContainer(
-      child: SizedBox(),
+      child: Column(
+        children: [
+          QuickInvoiceHeader(),
+        ],
+      ),
     );
   }
 }
