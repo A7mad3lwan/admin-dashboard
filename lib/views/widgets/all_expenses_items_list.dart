@@ -3,8 +3,15 @@ import 'package:flutter/material.dart';
 
 import '../../data/data source/statics/all_expenses_item_list.dart';
 
-class AllExpensesItemsList extends StatelessWidget {
+class AllExpensesItemsList extends StatefulWidget {
   const AllExpensesItemsList({super.key});
+
+  @override
+  State<AllExpensesItemsList> createState() => _AllExpensesItemsListState();
+}
+
+class _AllExpensesItemsListState extends State<AllExpensesItemsList> {
+  int selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -14,15 +21,39 @@ class AllExpensesItemsList extends StatelessWidget {
         var items = e.value;
         if (index == 1) {
           return Expanded(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
-              child: AllExpensesItem(allExpensesItemModel: items),
+            child: GestureDetector(
+              onTap: () {
+                updateIndex(index);
+              },
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 12),
+                child: AllExpensesItem(
+                  allExpensesItemModel: items,
+                  isSelected: selectedIndex == index,
+                ),
+              ),
             ),
           );
         } else {
-          return Expanded(child: AllExpensesItem(allExpensesItemModel: items));
+          return Expanded(
+            child: GestureDetector(
+              onTap: () {
+                updateIndex(index);
+              },
+              child: AllExpensesItem(
+                allExpensesItemModel: items,
+                isSelected: selectedIndex == index,
+              ),
+            ),
+          );
         }
       }).toList(),
     );
+  }
+
+  void updateIndex(int index) {
+    setState(() {
+      selectedIndex = index;
+    });
   }
 }
