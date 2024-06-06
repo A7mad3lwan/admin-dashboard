@@ -1,9 +1,7 @@
-import 'package:dashboard/views/widgets/custom%20widgets/quick_invoice.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-
-import '../custom widgets/all_expenses.dart';
+import '../custom widgets/all_expenses_and_quick_invoice_section.dart';
 import '../custom widgets/custom_drawer.dart';
 
 class DesktopLayout extends StatelessWidget {
@@ -21,20 +19,7 @@ class DesktopLayout extends StatelessWidget {
           flex: 2,
           child: Padding(
             padding: EdgeInsets.only(top: 40),
-            child: CustomScrollView(
-              slivers: [
-                SliverFillRemaining(
-                  hasScrollBody: false,
-                  child: Column(
-                    children: [
-                      AllExpenses(),
-                      SizedBox(height: 20),
-                      QuickInvoice(),
-                    ],
-                  ),
-                )
-              ],
-            ),
+            child: AllExpensesAndQuickInvoiceSection(),
           ),
         ),
       ],
