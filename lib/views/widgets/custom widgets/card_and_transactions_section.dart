@@ -3,6 +3,8 @@ import 'package:dashboard/views/widgets/custom%20widgets/my_card_section.dart';
 import 'package:dashboard/views/widgets/custom%20widgets/transaction_history.dart';
 import 'package:flutter/material.dart';
 
+import 'income_section.dart';
+
 class MyCardAndTransactionsSection extends StatelessWidget {
   const MyCardAndTransactionsSection({super.key});
 
@@ -25,6 +27,18 @@ class MyCardAndTransactionsSection extends StatelessWidget {
                   ),
                   SizedBox(height: 20),
                   TransactionHistory(),
+                ],
+              ),
+            ),
+          ),
+          SliverToBoxAdapter(child: SizedBox(height: 20)),
+          SliverToBoxAdapter(
+            child: CustomDashboardContainer(
+              padding: 24,
+              child: Column(
+                children: [
+                  IncomeSection(),
+                  SizedBox(height: 32),
                 ],
               ),
             ),
