@@ -1,5 +1,5 @@
-import '../../core/utils/app_images.dart';
-import '../model/user_list_model.dart';
+import '../../../core/utils/app_images.dart';
+import '../../model/user_list_model.dart';
 
 List<UserListTileModel> userTileItems = [
   const UserListTileModel(
