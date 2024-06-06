@@ -1,9 +1,9 @@
+import 'package:dashboard/views/widgets/custom%20widgets/card_and_transactions_section.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import '../custom widgets/all_expenses_and_quick_invoice_section.dart';
 import '../custom widgets/custom_drawer.dart';
-import '../custom widgets/transaction_history.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
@@ -25,7 +25,7 @@ class DesktopLayout extends StatelessWidget {
         ),
         SizedBox(width: 24),
         Expanded(
-          child: TransactionHistory(),
+          child: MyCardAndTransactionsSection(),
         ),
       ],
     );

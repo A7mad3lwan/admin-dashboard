@@ -11,8 +11,11 @@ class TransactionsHistoryList extends StatelessWidget {
     return ListView.builder(
       shrinkWrap: true,
       itemCount: transactionsItems.length,
-      itemBuilder: (context, index) => TransactionsItem(
-        transactionsModel: transactionsItems[index],
+      itemBuilder: (context, index) => Padding(
+        padding: const EdgeInsets.only(bottom: 12),
+        child: TransactionsItem(
+          transactionsModel: transactionsItems[index],
+        ),
       ),
     );
   }
