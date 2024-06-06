@@ -25,7 +25,9 @@ class CustomFormField extends StatelessWidget {
           ),
         ),
         hintText: hint,
-        hintStyle: AppStyles.styleRegular16,
+        hintStyle: AppStyles.styleRegular16.copyWith(
+          color: const Color(0xffAAAAAA),
+        ),
       ),
     );
   }
