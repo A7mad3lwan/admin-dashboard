@@ -1,6 +1,6 @@
+import 'package:dashboard/views/widgets/custom%20widgets/my_card_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import '../custom widgets/all_expenses_and_quick_invoice_section.dart';
 import '../custom widgets/custom_drawer.dart';
 
@@ -21,6 +21,10 @@ class DesktopLayout extends StatelessWidget {
             padding: EdgeInsets.only(top: 40),
             child: AllExpensesAndQuickInvoiceSection(),
           ),
+        ),
+        SizedBox(width: 24),
+        Expanded(
+          child: MyCard(),
         ),
       ],
     );
