@@ -1,4 +1,4 @@
-import 'package:dashboard/views/widgets/custom%20widgets/card_and_transactions_section.dart';
+import 'package:dashboard/views/widgets/custom%20widgets/income_section.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -25,7 +25,7 @@ class DesktopLayout extends StatelessWidget {
         ),
         SizedBox(width: 24),
         Expanded(
-          child: MyCardAndTransactionsSection(),
+          child: IncomeSection(),
         ),
       ],
     );

@@ -10,11 +10,11 @@ class MyCardAndTransactionsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(top: 40, right: 32),
+    return Padding(
+      padding: const EdgeInsets.only(top: 40, right: 32, bottom: 32),
       child: CustomScrollView(
         slivers: [
-          SliverToBoxAdapter(
+          const SliverToBoxAdapter(
             child: CustomDashboardContainer(
               padding: 24,
               child: Column(
@@ -31,15 +31,21 @@ class MyCardAndTransactionsSection extends StatelessWidget {
               ),
             ),
           ),
-          SliverToBoxAdapter(child: SizedBox(height: 20)),
-          SliverToBoxAdapter(
-            child: CustomDashboardContainer(
-              padding: 24,
-              child: Column(
-                children: [
-                  IncomeSection(),
-                  SizedBox(height: 32),
-                ],
+          const SliverToBoxAdapter(child: SizedBox(height: 20)),
+          SliverFillRemaining(
+            hasScrollBody: false,
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(12),
+                color: Colors.white,
+              ),
+              child: const Padding(
+                padding: EdgeInsets.all(20),
+                child: Column(
+                  children: [
+                    Expanded(child: IncomeSection()),
+                  ],
+                ),
               ),
             ),
           ),
