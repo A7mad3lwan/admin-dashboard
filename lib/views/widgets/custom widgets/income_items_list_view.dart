@@ -8,8 +8,8 @@ class IncomeItemsListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: incomeItems.length,
       shrinkWrap: true,
+      itemCount: incomeItems.length,
       itemBuilder: (context, index) =>
           IncomeItem(itemDetailsModel: incomeItems[index]),
     );
