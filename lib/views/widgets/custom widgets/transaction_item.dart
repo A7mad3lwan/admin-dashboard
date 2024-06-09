@@ -18,17 +18,17 @@ class TransactionsItem extends StatelessWidget {
       child: ListTile(
         title: Text(
           transactionsModel.title,
-          style: AppStyles.styleSemiBold16,
+          style: AppStyles.styleSemiBold16(context),
         ),
         subtitle: Text(
           transactionsModel.date,
-          style: AppStyles.styleRegular16.copyWith(
+          style: AppStyles.styleRegular16(context).copyWith(
             color: const Color(0xffAAAAAA),
           ),
         ),
         trailing: Text(
           transactionsModel.amount,
-          style: AppStyles.styleSemiBold20.copyWith(
+          style: AppStyles.styleSemiBold20(context).copyWith(
             color: transactionsModel.isWithdrawal
                 ? const Color(0xffF3735E)
                 : const Color(0xff7CD87A),

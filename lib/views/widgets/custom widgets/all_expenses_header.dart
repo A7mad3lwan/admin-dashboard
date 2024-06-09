@@ -8,9 +8,9 @@ class AllExpensesHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Text(
+        Text(
           'All Expenses',
-          style: AppStyles.styleSemiBold20,
+          style: AppStyles.styleSemiBold20(context),
         ),
         const Expanded(child: SizedBox()),
         Container(
@@ -24,14 +24,14 @@ class AllExpensesHeader extends StatelessWidget {
                 ),
                 borderRadius: BorderRadius.circular(12)),
           ),
-          child: const Row(
+          child: Row(
             children: [
               Text(
                 'Monthly',
-                style: AppStyles.styleMedium16,
+                style: AppStyles.styleMedium16(context),
               ),
-              SizedBox(width: 18),
-              Icon(
+              const SizedBox(width: 18),
+              const Icon(
                 Icons.keyboard_arrow_down_sharp,
                 color: Color(0xFF064061),
               ),
