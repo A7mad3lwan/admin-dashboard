@@ -44,10 +44,13 @@ class MyCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Text(
-                    '0918 8124 0042 8129',
-                    style: AppStyles.styleSemiBold20(context)
-                        .copyWith(color: Colors.white),
+                  FittedBox(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      '0918 8124 0042 8129',
+                      style: AppStyles.styleSemiBold20(context)
+                          .copyWith(color: Colors.white),
+                    ),
                   ),
                   const SizedBox(height: 12),
                   Text(
